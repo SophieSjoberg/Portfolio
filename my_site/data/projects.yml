@@ -1,3 +1,8 @@
+- name: Who am I?
+  description: My name is Sophie and I am a happy swede! 
+
+
+
 - name: ATM
   description: A Test driven ruby simulation of an ATM machine
 
