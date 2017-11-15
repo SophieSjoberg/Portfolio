@@ -12,11 +12,11 @@
             Home
             %span.sr-only (current)
         %li.nav-item
-          %a.nav-link{:href => "#"} Portfolio
+          %a.nav-link{:href => "portfolio.html.haml"} Portfolio
         %li.nav-item
-          %a.nav-link{:href => "#"} Who am I?
+          %a.nav-link{:href => "about.html.haml"} Who am I?
         %li.nav-item
-          %a.nav-link.disabled{:href => "#"} Contact
+          %a.nav-link.disabled{:href => "contact.html.haml"} Contact
         %li.nav-item
           %a.nav-link.disabled{:href => "#"} Stuff of the month
 
@@ -31,3 +31,4 @@
   %body{:class => page_classes}
     =yield
     =partial 'partials/_footer'
+    %footer
