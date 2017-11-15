@@ -1,3 +1,4 @@
-
-    %Title SOPHIE SJOBERG
-     %h3 A little story about my life
+.about
+  - data.about.each do |about|
+    %h6= about[:title]
+    %p= about[:description]
