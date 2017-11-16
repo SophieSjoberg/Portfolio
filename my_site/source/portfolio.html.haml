@@ -1,6 +1,168 @@
-.jumbotron.jumbotron-fluid
-  %b1 MY PROJECTS
-.projects
-  - data.projects.each do |project|
-    %h6= project[:title]
-    %p= project[:description]
+%img.img-fluid{:alt => "Responsive image", :src => "https://source.unsplash.com/nXPUwmczpq8/1800x650"}/
+%h3.text-center MY PROJECTS
+= "<br/>"*3
+
+-# .projects
+-#   - data.projects.each do |project|
+-#     %h6= project[:title]
+-#     %p= project[:description]
+.row
+.card-deck
+  .card
+    %img.card-img-top{:alt => "Card image cap", :src => "https://source.unsplash.com/8fDhgAN5zG0/240x200"}/
+    .card-body
+      %h4.card-title ATM Challenge
+      %p.card-text A Test driven ruby simulation of an ATM machine.
+      %p.card-text
+        %a.badge.badge-pill.badge-info{:href => "https://github.com/SophieSjoberg/ATM_Challenge", :role => "button", :target => "_blank", :title => "Github repository"} Github
+  .card
+    %img.card-img-top{:alt => "Card image cap", :src => "https://source.unsplash.com/1Shk_PkNkNw/240x200"}/
+    .card-body
+      %h4.card-title BMI Calculator
+      %p.card-text A Test driven ruby simulation of an ATM machine.
+      %p.card-text
+        %a.badge.badge-pill.badge-info{:href => "https://github.com/SophieSjoberg/BMI_Challenge", :role => "button", :target => "_blank", :title => "Github repository"} Github
+        %a.badge.badge-pill.badge-secondary{:href => "https://sophiesjoberg.github.io/BMI_Challenge/", :role => "button", :target => "_blank", :title => "BMI site"} Website
+  .card
+    %img.card-img-top{:alt => "Card image cap", :src => "https://source.unsplash.com/PHIgYUGQPvU/240x200"}/
+    .card-body
+      %h4.card-title Cooper Test
+      %p.card-text A Test driven ruby simulation of an ATM machine.
+      %p.card-text
+        %a.badge.badge-pill.badge-info{:href => "https://github.com/SophieSjoberg/Cooper_test", :role => "button", :target => "_blank", :title => "Github repository"} Github
+  = "<br/>"*5
+
+  .card
+    %img.card-img-top{:alt => "Card image cap", :src => "https://source.unsplash.com/aG-pvyMsbis/240x200"}/
+    .card-body
+      %h4.card-title FizzBuzz
+      %p.card-text A Test driven ruby simulation of an ATM machine.
+      %p.card-text
+        %a.badge.badge-pill.badge-info{:href => "https://github.com/SophieSjoberg/Week_2_assesment", :role => "button", :target => "_blank", :title => "Github repository"} Github JS
+        %a.badge.badge-pill.badge-danger{:href => "https://github.com/SophieSjoberg/Fizz_Buzz", :role => "button", :target => "_blank", :title => "Github repository"} Github Ruby
+
+  -# .card
+  -#   %img.card-img-top{:alt => "Card image cap", :src => "https://source.unsplash.com/8fDhgAN5zG0/240x200"}/
+  -#   .card-body
+  -#     %h4.card-title ATM Challenge
+  -#     %p.card-text A Test driven ruby simulation of an ATM machine.
+  -#     %p.card-text
+  -#       %a.badge.badge-pill.badge-info{:href => "https://github.com/SophieSjoberg/BMI_Challenge", :role => "button", :target => "_blank", :title => "Github repository"} Github
+  -# .card
+  -#   %img.card-img-top{:alt => "Card image cap", :src => "https://source.unsplash.com/8fDhgAN5zG0/240x200"}/
+  -#   .card-body
+  -#     %h4.card-title ATM Challenge
+  -#     %p.card-text A Test driven ruby simulation of an ATM machine.
+  -#     %p.card-text
+  -#       %a.badge.badge-pill.badge-info{:href => "https://github.com/SophieSjoberg/BMI_Challenge", :role => "button", :target => "_blank", :title => "Github repository"} Github
+  -#
+  -#
+
+
+
+
+-# .card{:style => "width: 20rem;"}
+-#   %img.card-img-top{:alt => "Card image cap", :src => "https://source.unsplash.com/8fDhgAN5zG0/240x200"}/
+-#   .card-body
+-#     %h4.card-title ATM Challenge
+-#     %p.card-text A Test driven ruby simulation of an ATM machine.
+-#   %ul.list-group.list-group-flush
+-#     %li.list-group-item Cras justo odio
+-#   .card-body
+-#     %a.card-link{:href => "https://github.com/SophieSjoberg/BMI_Challenge"} Github repo
+-# .card{:style => "width: 20rem;"}
+-#   %img.card-img-top{:alt => "Card image cap", :src => "https://source.unsplash.com/8fDhgAN5zG0/240x200"}/
+-#   .card-body
+-#     %h4.card-title ATM Challenge
+-#     %p.card-text A Test driven ruby simulation of an ATM machine.
+-#   %ul.list-group.list-group-flush
+-#     %li.list-group-item Cras justo odio
+-#   .card-body
+-#     %a.card-link{:href => "https://github.com/SophieSjoberg/BMI_Challenge"} Github repo
+-# .card{:style => "width: 20rem;"}
+-#   %img.card-img-top{:alt => "Card image cap", :src => "https://source.unsplash.com/8fDhgAN5zG0/240x200"}/
+-#   .card-body
+-#     %h4.card-title ATM Challenge
+-#     %p.card-text A Test driven ruby simulation of an ATM machine.
+-#   %ul.list-group.list-group-flush
+-#     %li.list-group-item Cras justo odio
+-#   .card-body
+-#     %a.card-link{:href => "https://github.com/SophieSjoberg/BMI_Challenge"} Github repo
+-# = "<br/>"*5
+-#
+-# .row
+-# .card{:style => "width: 20rem;"}
+-#   %img.card-img-top{:alt => "Card image cap", :src => "https://source.unsplash.com/8fDhgAN5zG0/240x200"}/
+-#   .card-body
+-#     %h4.card-title ATM Challenge
+-#     %p.card-text A Test driven ruby simulation of an ATM machine.
+-#   %ul.list-group.list-group-flush
+-#     %li.list-group-item Cras justo odio
+-#   .card-body
+-#     %a.card-link{:href => "https://github.com/SophieSjoberg/BMI_Challenge"} Github repo
+-# .card{:style => "width: 20rem;"}
+-#   %img.card-img-top{:alt => "Card image cap", :src => "https://source.unsplash.com/8fDhgAN5zG0/240x200"}/
+-#   .card-body
+-#     %h4.card-title ATM Challenge
+-#     %p.card-text A Test driven ruby simulation of an ATM machine.
+-#   %ul.list-group.list-group-flush
+-#     %li.list-group-item Cras justo odio
+-#   .card-body
+-#     %a.card-link{:href => "https://github.com/SophieSjoberg/BMI_Challenge"} Github repo
+-# .card{:style => "width: 20rem;"}
+-#   %img.card-img-top{:alt => "Card image cap", :src => "https://source.unsplash.com/8fDhgAN5zG0/240x200"}/
+-#   .card-body
+-#     %h4.card-title ATM Challenge
+-#     %p.card-text A Test driven ruby simulation of an ATM machine.
+-#   %ul.list-group.list-group-flush
+-#     %li.list-group-item Cras justo odio
+-#   .card-body
+-#     %a.card-link{:href => "https://github.com/SophieSjoberg/BMI_Challenge"} Github repo
+-#
+
+-#   .col-sm-6.col-md-4
+-#     .thumbnail
+-#       %h4 ATM
+-#       %img{:alt => "Image", :src => "https://source.unsplash.com/8fDhgAN5zG0/240x200"}/
+-#       .caption
+-#         %h6 Ruby, rspec
+-#         %a.badge.badge-pill.badge-info{:href => "https://github.com/SophieSjoberg/BMI_Challenge", :role => "button", :target => "_blank", :title => "Github repository"} Github
+-#   .col-sm-6.col-md-4
+-#     .thumbnail
+-#       %h4 BMI Calculator
+-#       %img{:alt => "Image", :src => "https://source.unsplash.com/aG-pvyMsbis/240x200"}/
+-#       .caption
+-#         %h6 Javascript, Jasmine
+-#         %a.badge.badge-pill.badge-info{:href => "https://github.com/SophieSjoberg/BMI_Challenge", :role => "button", :target => "_blank", :title => "Github repository"} Github
+-#         %a.badge.badge-pill.badge-secondary{:href => "https://sophiesjoberg.github.io/BMI_Challenge/", :role => "button", :target => "_blank", :title => "BMI site"} Website
+-#   .col-sm-6.col-md-4
+-#     .thumbnail
+-#       %h4 BMI Calculator
+-#       %img{:alt => "Image", :src => "https://source.unsplash.com/aG-pvyMsbis/240x200"}/
+-#       .caption
+-#         %h6 Javascript, Jasmine
+-#         %a.badge.badge-pill.badge-info{:href => "https://github.com/SophieSjoberg/BMI_Challenge", :role => "button", :target => "_blank", :title => "Github repository"} Github
+-#         %a.badge.badge-pill.badge-secondary{:href => "https://sophiesjoberg.github.io/BMI_Challenge/", :role => "button", :target => "_blank", :title => "BMI site"} Website
+-#
+-# -# .row
+-# -#   .col-sm-6.col-md-4
+-# -#     .thumbnail
+-# -#       %h4 ATM
+-# -#       %img{:alt => "Image", :src => "https://source.unsplash.com/8fDhgAN5zG0/240x200"}/
+-# -#       .caption
+-# -#         %h6 Ruby, rspec
+-# -#         %a.badge.badge-pill.badge-info{:href => "https://github.com/SophieSjoberg/BMI_Challenge", :role => "button", :target => "_blank", :title => "Github repository"} Github
+-# -#   .col-sm-6.col-md-4
+-# -#     .thumbnail
+-# -#       %h4 BMI Calculator
+-# -#       %img{:alt => "Image", :src => "https://source.unsplash.com/aG-pvyMsbis/240x200"}/
+-# -#       .caption
+-# -#         %h6 Javascript, Jasmine
+-# -#         %a.badge.badge-pill.badge-info{:href => "https://github.com/SophieSjoberg/BMI_Challenge", :role => "button", :target => "_blank", :title => "Github repository"} Github
+-# -#   .col-sm-6.col-md-4
+-# -#     .thumbnail
+-# -#       %h4 BMI Calculator
+-# -#       %img{:alt => "Image", :src => "https://source.unsplash.com/aG-pvyMsbis/240x200"}/
+-# -#       .caption
+-# -#         %h6 Javascript, Jasmine
+-# -#         %a.badge.badge-pill.badge-info{:href => "https://github.com/SophieSjoberg/BMI_Challenge", :role => "button", :target => "_blank", :title => "Github repository"} Github
