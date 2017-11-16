@@ -1,3 +1,7 @@
+describe 'index', type: :feature do
+
+  end
+
 it 'displays project list' do
   expect(page).to have_css '.projects'
   within '.projects' do
@@ -21,5 +25,12 @@ it 'renders footer partial' do
   within 'footer' do
     expect(page).to have_content
     expect(page).to have_content 'Saving lives one line of code at a time..'
+  end
+end
+
+it 'renders navbar partial' do
+  expect(page).to have_selector 'navbar'
+  within 'navbar' do
+    expect(page).to have_content
   end
 end
