@@ -1,9 +1,9 @@
 
-- name: ATM
+- title: ATM
   description: A Test driven ruby simulation of an ATM machine
 
-- name: FizzBuzz
+- title: FizzBuzz
   description: My first Test driven ruby projects
 
-- name: My First Website
+- title: My First Website
   description: Simple HTML5 site I've been building since the prepcourse
