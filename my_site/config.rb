@@ -31,6 +31,11 @@ page '/*.txt', layout: false
 # Methods defined in the helpers block are available in templates
 # https://middlemanapp.com/basics/helper-methods/
 
+helpers do 
+  def display_date
+    DateTime.now.strftime('%F %H:%M')
+  end
+end
 # helpers do
 #   def some_helper
 #     'Helping'
