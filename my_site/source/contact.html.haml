@@ -4,16 +4,9 @@
 = "<br/>"*3
 %h3.text-center ~WORK IN PROGRESS~
 
+%label{:for => "exampleFormControlTextarea1"} Contact me:
 %form{:action => "http://formspree.io/sophie.sjoberg@gmail.com", :method => "POST"}
-  -# %label{:for => "exampleFormControlTextarea1"} Contact me
   %input{:name => "email", :placeholder => "Your email", :type => "email"}/
   %input{:name => "message", :placeholder => "Your message"}
   %button.btn-pill.btn-info{:type => "submit", :style => "margin-top: 25px;"} Send
   %input{:name => "_next", :type => "hidden", :value => "//sophiesjoberg.surge.sh"}/
-
-
--# %img.img-fluid{:alt => "Responsive image", :src => "http://bit.ly/2juzG4G"}/
--# %form{:action => "https://formspree.io/sophie.sjoberg@gmail.com", :method => "POST"}
--#   %input{:name => "name", :type => "text"}/
--#   %input{:name => "_replyto", :type => "email"}/
--#   %input{:type => "submit", :value => "Send"}/
