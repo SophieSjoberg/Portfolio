@@ -1,5 +1,13 @@
 !!!
 %html
   %head
-= "<br/>"*3
-%h3.text-center ~WORK IN PROGRESS~
+  %h5 Resumé / Curriculum Vitae
+= "<br/>"*2
+.container
+%a.text-align{:style => "text-align.center", :href => "cv.html"}
+
+.resume
+  - data.resume.each do |resume|
+    %h6= resume[:title]
+    %h9= resume[:description]
+    %p= resume[:time]
