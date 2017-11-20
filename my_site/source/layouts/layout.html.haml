@@ -1,23 +1,26 @@
 !!!
 %html
   %head
-    %title= current_page.data.title || "Sophie's Portfolio"
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %meta{:charset => "utf-8"}/
+    %meta{:content => "ie=edge", "http-equiv" => "x-ua-compatible"}/
     %meta{:name => "viewport", :content => "width=device-width, initial-scale=1, shrink-to-fit=no"}/
-
     %link{:rel => "stylesheet", :href => "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css", :integrity => "sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb", :crossorigin => "anonymous"}
-    =stylesheet_link_tag 'site'
-    %script{:src => "http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"}
-
-  %body{:class => page_classes}
-  .p-3.mb-2.bg-light.text-dark.bg-light
-    =partial 'partials/_navbar'
+    %title= current_page.data.title || "Sophie's Portfolio"
+    = stylesheet_link_tag "source/stylesheet/site"
+    = partial 'partials/navbar'
+    -# = partial 'partials/header'
+    = javascript_include_tag "source/stylesheet/site"
+  %body
     =yield
-    = "<br/>"*5
-    =partial 'partials/_footer'
+    = partial 'partials/footer'
     %a{:href => "http://www.facebook.com/SophieSjoberg.9", :target => "_blank", :title => "follow me on facebook"}
       %img{:alt => "follow me on facebook", :border => "0", :src => "https://c866088.ssl.cf3.rackcdn.com/assets/facebook30x30.png"}/
     %a{:href => "https://www.linkedin.com/in/sophie-sj%C3%B6berg-64b3a5153/", :target => "_blank", :title => "follow me on LinkedIn"}
       %img{:alt => "follow me on LinkedIn", :border => "0", :src => "https://www.shareicon.net/data/48x48/2017/06/30/888051_logo_512x512.png"}/
     %a{:href => "http://www.instagram.com/sophiesjoberg", :target => "_blank", :title => "follow me on instagram"}
       %img{:alt => "follow me on instagram", :border => "0", :src => "https://c866088.ssl.cf3.rackcdn.com/assets/instagram30x30.png"}/
+
+    %script{:crossorigin => "anonymous", :integrity => "sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN", :src => "https://code.jquery.com/jquery-3.2.1.slim.min.js"}
+    %script{:crossorigin => "anonymous", :integrity => "sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh", :src => "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"}
+    %script{:crossorigin => "anonymous", :integrity => "sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ", :src => "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"}
