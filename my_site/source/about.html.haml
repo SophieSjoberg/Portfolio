@@ -2,13 +2,11 @@
 !!!
 %html
   %head
-%img{:alt => "Me", :src => "FullSizeRender.jpg/45x40"}/
+    %img{:alt => "Me", :src => "/images/FullSizeRender.jpg", :class => "center"}/
 
-= "<br/>"*3
-%h3.text-center ~WORK IN PROGRESS~
+
+%br
 .about
   - data.about.each do |about|
     %h6= about[:title]
     %p= about[:description]
-
-    -# %img{:src => "FullSizeRender.jpg/45x40"}/

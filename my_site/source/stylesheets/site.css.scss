@@ -1,8 +1,80 @@
-.about {
-  background-color: #fbc547;
-  padding: 30px;
+html, body {
+    margin: 0;
+    padding: 0;
 }
 
-body {
+a {
+    text-decoration: none;
+}
 
+h1 {
+    text-align: center;
+    font-size: 36px;
+    font-family: "Courier New";
+}
+
+h3 {
+    text-align: center;
+    font-family: "Courier New";
+    font-weight: bold;
+}
+
+h4 {
+    text-align: center;
+    font-family: "Courier New";
+    font-weight: bold;
+}
+
+h6 {
+    text-align: center;
+    font-family: "Courier New";
+    font-weight: bold;
+}
+
+p {
+    text-align: center;
+    font-family: "Courier New";
+}
+
+#navbar {
+    padding: 20px 0;
+    font-size: 24px;
+}
+
+form {
+  text-align: center;
+  font-family: "Courier New";
+  font-weight: bold;
+}
+
+footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
+
+.wrapper {
+  min-height: 100%;
+  margin-bottom: 200px;
+}
+//
+// img {
+//     padding: 1rem;
+//     width: 180px;
+//     height: 240px;
+//     border-radius: 25px;
+// }
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    width: 180px;
+    height: 240px;
+    border-radius: 25px;
 }
